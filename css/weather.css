@@ -107,6 +107,7 @@ body {
     outline: none;
     border: none;
     background: #83a077;
+    max-width: 245px;
 }
 .inputCity>.iconfont {
     font-size: 36px;
