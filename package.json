@@ -1,0 +1,19 @@
+{
+  "name": "gulpfile",
+  "version": "1.0.0",
+  "description": "天气预报小项目",
+  "main": "gulpfile.js\u001b[D\u001b[D\u001b[\u001b[C\u001b[C\u001b[.js",
+  "scripts": {
+    "test": "git add . && git commit -am'autoCommit' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuxin333666/weather.git"
+  },
+  "author": "xuxin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuxin333666/weather/issues"
+  },
+  "homepage": "https://github.com/xuxin333666/weather#readme"
+}
