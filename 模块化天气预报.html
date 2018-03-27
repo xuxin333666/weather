@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <title>天气程序</title>
+        <link rel="stylesheet" href="css/weather.css">
+        <link rel="stylesheet" href="//at.alicdn.com/t/font_580882_qcl74if3m2m4pldi.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <div class="flex location">
+                    <h3 class="city">未定位|<span class="tips">亲，每天都关注关注天气哦~</span></h3>
+                    <div class="position">
+                        <a href="#"  class="iconfont icon-064dangqianweizhi"></a>
+                        <p class="countries">未知 中国</p> 
+                        <div class="time">??:?? ??</div>
+                        <div class="tfhourct"><span class="handoup iconfont icon-handoup"></span><span class="tfhour">24小时制切换</span><span class="tfhourChange iconfont icon-huadonganniux"></span></div>
+                    </div>
+                </div> 
+                <ul class="nav">
+                    <li class="weathers action"><span class="iconfont icon-shouye"></span>WEATHER</li>
+                    <li class="news"><span class="iconfont icon-zhifeiji"></span>NEWS&ENVENTS</li>
+                    <li class="music"><span class="iconfont icon-tubiaozhizuomoban"></span> MUSIC~ </li>
+                    <ul class="btnct">
+                    </ul>
+                </ul>  
+                <!-- <div class="detailedWeather clearfix">
+                    <div class="key">
+                        日期:<br>星期:<br>最高气温:<br>最低气温:<br>气候:<br>风力:<br>xxx:<br>xxx:<br>xxx:<br>
+                    </div>
+                    <div class="value">
+                        2018-03-26<br>周一<br>23度<br>13度<br>阵雨/多云<br>2级<br>yyy<br>yyy<br>yyy<br>
+                    </div>
+                </div>  -->
+                <img class="backgroundimg" src="./img/动漫风景1.jpg" alt="">
+                <img class="backgroundimg" src="./img/动漫风景2.jpg" alt="">
+                <img class="backgroundimg" src="./img/动漫风景4.jpg" alt="">
+                <img class="backgroundimg" src="./img/风景2.jpg" alt="">
+                <img class="backgroundimg" src="./img/风景10.jpg" alt="">
+                <img class="backgroundimg" src="./img/动漫风景5.jpg" alt="">
+                <div class="next iconfont icon-youfanye-xue"></div>
+                <div class="pre iconfont icon-zuofanye-xue"></div>
+                <div class="inputCity bothAction">
+                    <label for="cityName" class="inputCityName">请输入城市全拼 |</label>
+                    <input type="text" class="cityName" id="cityName" name="cityName" placeholder="例如：beijing">
+                    <span class="submit iconfont icon-queren"></span> 
+                    <ul class="citySelect"></ul>
+                </div>
+            </div>
+            <ul class="weatherDay">
+                <li class="weather today clearfix">
+                    <div class="weatherPhoto">
+                        <img src="//weixin.jirengu.com/images/weather/code/0.png" alt="">
+                        <p class="windspeed">?mph / ??<sup>&#176;</sup></p>
+                    </div>
+                    <div class="describe">
+                        <h1 class="temperature">??<sup>&#176;</sup></h1>
+                        <a href="#" class="date">Monday 周一</a>
+                    </div>
+                </li>
+                <li class="weather ohterday"><a href="#" class="date">TUE</a><br><img src="//weixin.jirengu.com/images/weather/code/0.png" alt=""><p class="futuretemperature">??<sup>&#176;</sup></p></li>
+                <li class="weather ohterday"><a href="#" class="date">WED</a><br><img src="//weixin.jirengu.com/images/weather/code/0.png" alt=""><p class="futuretemperature">??<sup>&#176;</sup></p></li>
+                <li class="weather ohterday"><a href="#" class="date">THU</a><br><img src="//weixin.jirengu.com/images/weather/code/0.png" alt=""><p class="futuretemperature">??<sup>&#176;</sup></p></li>
+                <li class="weather ohterday"><a href="#" class="date">FRI</a><br><img src="//weixin.jirengu.com/images/weather/code/0.png" alt=""><p class="futuretemperature">??<sup>&#176;</sup></p></li>
+                <li class="weather ohterday"><a href="#" class="date">SAT</a><br><img src="//weixin.jirengu.com/images/weather/code/0.png" alt=""><p class="futuretemperature">??<sup>&#176;</sup></p></li>
+                <li class="weather ohterday"><a href="#" class="date">SUN</a><br><img src="//weixin.jirengu.com/images/weather/code/0.png" alt=""><p class="futuretemperature">??<sup>&#176;</sup></p></li>
+                <a href="" class="standardWidth"></a>
+            </ul>
+        </div>
+        <div class="inputBgcolor bothAction"></div>   
+        <script data-main="./JavaScript/config/config.js" src="./JavaScript/library/require.js"></script>
+    </body>
+</html>
