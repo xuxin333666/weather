@@ -4,7 +4,8 @@
   "description": "天气预报小项目",
   "main": "gulpfile.js\u001b[D\u001b[D\u001b[\u001b[C\u001b[C\u001b[.js",
   "scripts": {
-    "test": "git add . && git commit -am'autoCommit' && git push"
+    "test": "git add . && git commit -am'autoCommit' && git push",
+    "start": "npm test"
   },
   "repository": {
     "type": "git",

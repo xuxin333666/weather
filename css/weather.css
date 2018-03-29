@@ -277,6 +277,14 @@ body {
 .pre:hover {
     opacity: 0.8; 
 }
+.weatherDay>.today:hover,
+.weatherDay>.ohterday:hover,
+.wrapper .location>.position>.icon-064dangqianweizhi:hover,
+.next:hover,
+.pre:hover{
+    transform: scale(1.05,1.05);
+    transition: all .5s;
+}
 .weatherDay>.today.action,
 .weatherDay>.ohterday.action,
 .citySelect>.select:hover,
@@ -290,6 +298,7 @@ body {
 .wrapper>.gotop:hover {
     opacity: 1;
 }
+
 
 
 /* waterfall css */
@@ -357,4 +366,39 @@ body {
     width: 50%;
     height: 100%;
     padding: 20px 20px 0 20px;
+}
+@keyframes load {
+    0%{
+        box-shadow: 0 0 white;
+    }
+    50%{
+        height: 42px;
+        box-shadow: 0 -7px white;
+    }
+    100%{}
+}
+.loading,
+.loading:before,
+.loading:after {
+    position: absolute;
+    top: 0;
+    height: 35px;
+    width: 8px;
+    background: white;
+}
+.loading {
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%,0);
+    animation: 1s load infinite 0.25s; 
+}
+.loading:before {
+    content: '';
+    left: -15px;
+    animation: 1s load infinite; 
+}
+.loading:after {
+    content: '';
+    left: 15px;
+    animation: 1s load infinite 0.5s; 
 }

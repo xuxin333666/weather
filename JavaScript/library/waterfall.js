@@ -78,6 +78,7 @@ define(['jquery'],function($){
             }
             self.isLoadOver = window.setTimeout(function(){
                 self.lazyLoadLock = false;
+                $('div.loading').remove();
                 if(fn){
                     fn()
                 }

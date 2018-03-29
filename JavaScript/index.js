@@ -42,6 +42,7 @@ define(['jquery',
             return waterfallobj.isLoadOverlock()
         },
         liAction: function(){
+            $('.content').append($('<div class="loading"></div>'))
             waterfallobj = new waterfall({
                 number: 8,
                 strCt: '.weatherDay',
